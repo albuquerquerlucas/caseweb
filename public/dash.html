@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="content-Type" content="text/html; charset=utf-8"/>
+    <title>Case Web</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
+    <link rel="stylesheet" href="https://bootswatch.com/3/flatly/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><i class="fa fa-google-wallet" aria-hidden="true"></i> CaseWeb</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" id="usuarioLogado">Bem vindo(a) usuário</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >
+                        Config. <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" id="linkPerfilDash"><i class="glyphicon glyphicon-user"></i> Perfil</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a id="linkLogoutDash"><i class="glyphicon glyphicon-log-out"></i> Sair</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /NAV BAR -->
+
+    <!-- Container -->
+    <div class="container">
+        <!-- BOX2 -->
+        <div class="box2">
+            <!-- TAB CURSOS -->
+            <div class="container" id="">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2><i class="glyphicon glyphicon-pencil"></i> Formulário para cadastro de Cursos</h2><br/>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="edtNomeCurso">Curso</label>
+                                        <input type="text" class="form-control" id="edtNomeCurso">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="edtNomeCurso">Professor</label>
+                                        <input type="text" class="form-control" id="edtNomeProfessor">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="form-group">
+                                        <label for="edtDescricao">Descrição</label><br>
+                                        <textarea id="edtDescricao" rows="3" cols="80">
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>
+                                    <button class="btn btn-sm btn-success" id="btnSalvarCurso">Salvar 
+                                        <i class="glyphicon glyphicon-floppy-disk"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-default" id="btnCancelarCurso">cancelar</button>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2><i class="glyphicon glyphicon-list-alt"></i> Cursos Cadastrados</h2><br/>
+                                <ul id="listaCursosDb"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /TAB CURSOS -->
+        </div>
+        <!-- /BOX2 -->
+    </div><br/><br/>
+    <!-- /.container -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/71bfd4f6ac.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="js/send-curso-rtdb.js"></script>
+</body>
+</html>

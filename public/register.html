@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="content-Type" content="text/html; charset=utf-8"/>
+    <title>Case Web</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
+    <link rel="stylesheet" href="https://bootswatch.com/3/flatly/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><i class="fa fa-google-wallet" aria-hidden="true"></i> CaseWeb</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="box">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <h1>Efetue seu cadastro</h1>
+                    <p>Informe e-mail e senha.</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="edtEmailCadastro" placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="edtSenhaCadastro" placeholder="Senha" required>
+                        </div>
+                    </form>
+                    <p>
+                        <button class="btn btn-sm btn-success pull-right" id="btnRegistrarCadastro">Cadastrar <i class="glyphicon glyphicon-log-in"></i></button>
+                    </p>
+                </div>
+            </div><br>
+            <div class="row text-center">
+                <div class="col-md-4 col-md-offset-4">
+                    <hr/>
+                    <p>Já possui conta? <a href="index.html">Faça login!</a></p>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.container -->
+
+    <nav class="navbar navbar-fixed-bottom">
+        <div class="container">
+            <p align="center">CaseWeb / <a href="https://firebase.google.com/?hl=pt-br" target="_blank">Firebase</a> | 2017.</p>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
