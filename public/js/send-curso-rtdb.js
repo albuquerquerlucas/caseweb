@@ -37,7 +37,7 @@ function createCurso(id, curso, professor, descricao){
 	};
 
 	// Salva no realtime database
-	firebase.database().ref().child('cursos').child(id).push(data);
+	firebase.database().ref().child('cursos').child(id).set(data);
 }
 
 // Resgatar dados do database
